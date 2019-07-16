@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../auth/auth.service';
-import { Router } from '@angular/router';
-import { ToastController } from '@ionic/angular';
+import { Router, ActivatedRoute } from '@angular/router';
+import { ToastController, NavController } from '@ionic/angular';
 
 
 @Component({
@@ -11,14 +11,24 @@ import { ToastController } from '@ionic/angular';
 })
 export class InicioPage implements OnInit {
 
-  constructor(private  authService: AuthService, private  router: Router, private toastController: ToastController) { 
-     var timeOut=60000;
-     var durationToastTime=3000;
-    async function presentToast() {
+  argumentos = null;
+  countEnd = null;
+  conteo = null;
+  constructor(private  authService: AuthService, 
+              private  router: Router, 
+              private toastController: ToastController,
+              private activeRoute: ActivatedRoute,
+              private navCrt: NavController
+              ) {
+                const timeOut = 60000;
+                // const timeOut = 5000;
+                const durationToastTime = 3000;
+
+                async function presentToast() {
       const toast = await toastController.create({
         header: 'Quieres continuar Logeado?',
         duration: durationToastTime,
-        // message: 'Tu sesión ha expirado,favor Ingresa tus credenciales nuevamente',
+        message: 'Tu sesión ha expirado,favor Ingresa tus credenciales nuevamente',
         position: 'middle',
         color: 'danger',
         buttons: [
@@ -45,11 +55,26 @@ export class InicioPage implements OnInit {
       return await toast.present();
     }
 
-    var id =setInterval(()=>{  presentToast(); }, timeOut);
+    this.countEnd = timeOut / 1000;
+                let intervaloParar = setInterval(() => {
+this.countEnd = this.countEnd - 1;
+console.log(this.countEnd);
+}, 1000);
+
+    // var id = setInterval(() => {  presentToast(); }, timeOut);
+               
+                let id = setTimeout(() => {
+      this.authService.logout();
+      this.navCrt.navigateForward(['login', true]);
+      clearInterval(intervaloParar);
+      // this.router.navigateByUrl('login');
+    }, timeOut);
 
   }
 
   ngOnInit() {
+    this.argumentos = this.activeRoute.snapshot.paramMap.get('id');
+    console.log(this.argumentos);
   }
 
   logout(form) {
@@ -60,7 +85,6 @@ export class InicioPage implements OnInit {
   abrirMenu() {
     // this.menu.openFirst();
     console.log('abrir menu');
-    
   }
 
 }

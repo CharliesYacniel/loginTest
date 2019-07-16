@@ -1,9 +1,6 @@
 # Login Test 🎙️
 -- Un párrafo de la descripción del proyecto va aquí --
 
-![GitHub Logo](https://avatars1.githubusercontent.com/u/9919?s=200&v=4)
-Imagen: imagen de fondo
-
 ## Empezando
 Indicar que instrucciones le permitirán obtener una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo y pruebas.
 
@@ -34,13 +31,15 @@ Agregue notas adicionales sobre cómo implementar esto en un sistema en vivo
 
 ## Construido con
 - [Framework 1](http://github.com) - Descripcion principal de " Framework 1 "
-- [Framework 2](http://github.com) - Descripcion principal de " Framework 2 "
-- [Framework 3](http://github.com) - Descripcion principal de " Framework 3 "
 
 ## Versiones
 
 ### version 1.0.0
-![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/loginTest1.png)
+![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/loginTest1.png) Captura: Primera vista de login test.
+
+![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/logintestToken.png) Captura: Primera vista de login test.
+
+![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/logintestToast.png)
 Captura: Primera vista de login test.
 
 ## Autores
@@ -49,7 +48,7 @@ Vea también la lista de [colaboradores](https://github.com/CharliesJacopoYacnie
 
 License
 ----
-Este proyecto es FREE vea el archivo [LICENSE.md](https://github.com/CharliesJacopoYacniel/APISoap/blob/master/README.md) para más detalles.
+Este proyecto es FREE.
 ```Text
       ___           ___           ___           ___                                     ___           ___              
      /  /\         /__/\         /  /\         /  /\                      ___          /  /\         /  /\             
