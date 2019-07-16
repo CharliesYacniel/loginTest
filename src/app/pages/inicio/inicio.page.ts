@@ -11,28 +11,44 @@ import { ToastController } from '@ionic/angular';
 })
 export class InicioPage implements OnInit {
 
-  constructor(private  authService: AuthService, private  router: Router, private toastController: ToastController) { }
-
-
-  async presentToastWithOptions() {
-    const toast = await this.toastController.create({
-      header: 'Advertencia',
-      duration: 2000,
-      message: 'Tu sesion ha expirado,favor Ingresa tus credenciales nuevamente',
-      position: 'middle',
-      color: 'danger',
-      buttons: [
-           {
-            side: 'bottom',
-            icon: 'star',
-            text: 'Aceptar',
+  constructor(private  authService: AuthService, private  router: Router, private toastController: ToastController) { 
+     var timeOut=60000;
+     var durationToastTime=3000;
+    async function presentToast() {
+      const toast = await toastController.create({
+        header: 'Quieres continuar Logeado?',
+        duration: durationToastTime,
+        // message: 'Tu sesión ha expirado,favor Ingresa tus credenciales nuevamente',
+        position: 'middle',
+        color: 'danger',
+        buttons: [
+          {
+            side: 'start',
+            text: 'SI',
+            role: 'Cancelar',
             handler: () => {
-              console.log('clicked the toast xD');
+              console.log('Me quedo logeado');
             }
-          }]
-    });
-    toast.present();
+          },
+           {
+            side: 'end',
+            text: 'NO',
+            handler: () => {
+              console.log('Me voy a casa Vince...');
+              clearInterval(id);
+              authService.logout();
+              router.navigateByUrl('login');
+            }
+          }
+        ]
+      });
+      return await toast.present();
+    }
+
+    var id =setInterval(()=>{  presentToast(); }, timeOut);
+
   }
+
   ngOnInit() {
   }
 

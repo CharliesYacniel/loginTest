@@ -10,17 +10,12 @@ Indicar que instrucciones le permitirán obtener una copia del proyecto en funci
 ## Pre requisitos
 Qué cosas necesita para instalar el software y cómo instalarlo.
 ..Mostrar ejemplo..
- 
-![GitHub Logo](https://avatars1.githubusercontent.com/u/9919?s=200&v=4)
-Imagen 1: descripcion de imagen 1
 
 
 ## Instalación
 Describe una serie pasos de ejemplos que le indican cómo ejecutar un entorno de desarrollo.
 ..Mostrar ejemplo..
 
-![GitHub Logo](https://avatars1.githubusercontent.com/u/9919?s=200&v=4)
-Imagen 1: descripcion de imagen 1
 
 Termina con un ejemplo de cómo sacar algunos datos del sistema o usarlos para una pequeña demostración.
 
@@ -29,19 +24,13 @@ Explicar cómo ejecutar las pruebas automatizadas para este sistema.
 Desglosar en pruebas de extremo a extremo
 Explica qué pruebas y por qué
 ..Mostrar ejemplo..
- 
-![GitHub Logo](https://avatars1.githubusercontent.com/u/9919?s=200&v=4)
-Imagen 1: descripcion de imagen 1
 
 ## Despliegue
 Agregue notas adicionales sobre cómo implementar esto en un sistema en vivo
 ..Mostrar ejemplo..
  
-![GitHub Logo](https://avatars1.githubusercontent.com/u/9919?s=200&v=4)
-Imagen 1: descripcion de imagen 1
 
-![GitHub Logo](https://avatars1.githubusercontent.com/u/9919?s=200&v=4)
-Imagen 2: descripcion de imagen 2
+
 
 ## Construido con
 - [Framework 1](http://github.com) - Descripcion principal de " Framework 1 "
@@ -49,7 +38,10 @@ Imagen 2: descripcion de imagen 2
 - [Framework 3](http://github.com) - Descripcion principal de " Framework 3 "
 
 ## Versiones
-Para las versiones disponibles, vea las etiquetas en este repositorio .
+
+### version 1.0.0
+![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/loginTest1.png)
+Captura: Primera vista de login test.
 
 ## Autores
 **Charlies Yacniel** - Trabajo inicial - [CharliesJacopoYacniel](https://www.facebook.com/CharliesYacniel)

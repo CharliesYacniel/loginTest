@@ -8,11 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
-  constructor(private  authService: AuthService, private  router: Router) { }
-
+    // TIME_IN_MS = 5000;
+    constructor(private  authService: AuthService, private  router: Router) { }
+    
+ 
+    
 
   ngOnInit() {
+    
   }
   
   login(form){
