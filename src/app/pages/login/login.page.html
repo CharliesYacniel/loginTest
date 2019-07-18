@@ -1,7 +1,8 @@
-<ion-content color="primary" padding>
-    <form #form="ngForm" (ngSubmit)="login(form)">
+<ion-content  fullscreen="true" class="bg-image no-scroll">
+<img src="../../../assets/bg.jpg" class="img">
+    <form #form="ngForm" (ngSubmit)="login(form)" class="my_form">
       <ion-grid>
-        <ion-row color="primary" justify-content-center>
+        <ion-row color="" justify-content-center>
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
             <div text-center>
               <h3>Login</h3>
@@ -29,7 +30,7 @@
           </ion-col>
         </ion-row>
         <ion-row>
-            <ion-label text-center> Aun no tienes cuenta? registrate <a routerLink='/register'>aqu&iacute; </a></ion-label>
+            <!-- <ion-label text-center> Aun no tienes cuenta? registrate <a routerLink='/register'>aqu&iacute; </a></ion-label> -->
         </ion-row>
       </ion-grid>
     </form>

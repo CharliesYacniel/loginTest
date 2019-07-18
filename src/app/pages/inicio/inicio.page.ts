@@ -82,6 +82,10 @@ console.log(this.countEnd);
     this.router.navigateByUrl('login');
   }
 
+  singOut(){
+    this.authService.logout();
+    this.router.navigateByUrl('login');
+  }
   abrirMenu() {
     // this.menu.openFirst();
     console.log('abrir menu');
