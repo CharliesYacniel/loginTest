@@ -2,7 +2,11 @@
 -- Un párrafo de la descripción del proyecto va aquí --
 
 ## Empezando
-Indicar que instrucciones le permitirán obtener una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo y pruebas.
+Iniciar el servidor de pruebas 
+para ello hacer 
+
+-- cd express-auth-demo
+-- npm start
 
 ## Pre requisitos
 Qué cosas necesita para instalar el software y cómo instalarlo.
@@ -35,12 +39,19 @@ Agregue notas adicionales sobre cómo implementar esto en un sistema en vivo
 ## Versiones
 
 ### version 1.0.0
-![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/loginTest1.png) Captura: Primera vista de login test.
+![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/loginTest1.png)
+Captura: Primera vista de login test.
 
-![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/logintestToken.png) Captura: Primera vista de login test.
+![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/logintestToken.png)
+Captura: Primera vista de login test.
 
 ![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/logintestToast.png)
+
 Captura: Primera vista de login test.
+
+![Login test Image](https://github.com/CharliesJacopoYacniel/loginTest/blob/master/src/capturesImage/last.png)
+
+Captura: Ultima vista (editada) de login test.
 
 ## Autores
 **Charlies Yacniel** - Trabajo inicial - [CharliesJacopoYacniel](https://www.facebook.com/CharliesYacniel)

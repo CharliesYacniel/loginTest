@@ -42,7 +42,7 @@ const  createUser  = (user, cb) => {
 createUsersTable();
 
 router.get('/', (req, res) => {
-    res.status(200).send('This is an authentication server');
+    res.status(200).send('Esto es un servicio de autenticacion para Login Test');
 });
 
 router.post('/register', (req, res) => {
